@@ -1,0 +1,115 @@
+:root {
+  --main: #b52a04;
+  --detail: #fb8b23;
+  --background: #f8efd9;
+  --accent: #fbbf58;
+}
+body {
+  font-family: FontsFree-Net-Grobek-Heavy;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  color: var(--accent);
+}
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: FontsFree-Net-Grobek-Heavy;
+  src: url(fonts/FontsFree-Net-Grobek-Heavy.ttf);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  align-items: stretch;
+}
+aside {
+  background-color: var(--main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#logo {
+  width: 180px;
+}
+#content-wrapper {
+  padding: 2rem;
+}
+#logo-title,
+#logo-quote {
+  font-size: 4rem;
+}
+
+#logo-quote {
+  font-size: 2rem;
+}
+
+#navbar {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  padding: 1px;
+  list-style: none;
+  background-color: var(--main);
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.nav-link:hover {
+  color: var(--detail);
+}
+
+#chef {
+  width: 150px;
+}
+#content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--main);
+  padding: 2rem;
+}
+
+#content p {
+  font-size: 1.3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 200;
+}
+#quote-wrapper {
+  padding-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.quote {
+  font-style: italic;
+}
+
+#map, #restaurant {
+  height: 280px;
+  width: auto;
+}
+
+
